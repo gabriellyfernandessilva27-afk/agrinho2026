@@ -1,0 +1,173 @@
+/* Configurações Gerais e Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* Menu de Navegação */
+header {
+    background-color: #0B2545; /* Azul Escuro */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header .logo {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header .logo span {
+    color: #134074; /* Azul Médio */
+    background: #EEF4F8;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+nav a {
+    color: #EEF4F8;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #8DA9C4; /* Azul Claro */
+}
+
+nav .btn-nav {
+    background-color: #134074;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: background 0.3s;
+}
+
+nav .btn-nav:hover {
+    background-color: #8DA9C4;
+    color: #0B2545;
+}
+
+/* Seção Principal (Hero) */
+.hero {
+    background: linear-gradient(rgba(11, 37, 69, 0.85), rgba(19, 64, 116, 0.85)), 
+                url('https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 span {
+    color: #8DA9C4;
+}
+
+.hero-content p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+    color: #EEF4F8;
+}
+
+.btn-main {
+    background-color: #8DA9C4;
+    color: #0B2545;
+    padding: 12px 28px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(141, 169, 196, 0.4);
+    transition: transform 0.3s, background 0.3s;
+}
+
+.btn-main:hover {
+    transform: translateY(-3px);
+    background-color: #EEF4F8;
+}
+
+/* Seção de Funcionalidades/Cards */
+.features {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 36px;
+    color: #0B2545;
+    margin-bottom: 10px;
+}
+
+.features .subtitle {
+    color: #666;
+    margin-bottom: 50px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    width: 320px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-top: 5px solid #134074;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(11, 37, 69, 0.15);
+}
+
+.card .icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    color: #0B2545;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+.card p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Rodapé */
+footer {
+    background-color: #0B2545;
+    color: #8DA9C4;
+    text-align: center;
+    padding: 30px;
+    font-size: 14px;
+}
